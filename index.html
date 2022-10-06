@@ -33,16 +33,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto fw-bold">
-                        <li class="nav-item fs-5 text-uppercase">
-                            <a class="nav-link brand-link" aria-current="page" href="#home">Home</a>
+                    <ul class="navbar-nav ms-auto fw-bold d-flex gap-3">
+                        <li class="nav-item">
+                            <a href="#projects" class="btn btn-outline-danger text-white text-uppercase py-2 px-3"
+                                style="border-radius: 0px">see my projects <i
+                                    class="fa-solid fa-briefcase ms-2"></i></a>
                         </li>
-                        <li class="nav-item fs-5 text-uppercase">
-                            <a class="nav-link brand-link" href="#projects">Projects</a>
+                        <li class="nav-item">
+                            <a href="#contacts" class="btn btn-outline-danger text-white text-uppercase py-2 px-3"
+                                style="border-radius: 0px">get in touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
                         </li>
-                        <li class="nav-item fs-5 text-uppercase">
-                            <a class="nav-link brand-link" href="#contacts">Contacts</a>
-                        </li>
+                        <div class="d-flex align-items-center gap-2">
+                            <li class="nav-item">
+                                <a href="https://github.com/StefanoSax93"><i
+                                        class="fa-brands fa-2x fa-github brand-link"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.linkedin.com/in/stefano-saccocci-a67164200/"><i
+                                        class="fa-brands fa-2x fa-linkedin ms-2 brand-link"></i></a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -51,20 +61,42 @@
         <div class="section watch" id="home">
             <div class="container">
                 <div class="content">
-                    <div class="pt-5 mt-5">
-                        <h1 class="border-start border-4 border-danger ps-3">Welcome!</h1>
-                        <div class="display-2 fw-bold">I'm <span class="text-danger">Stefano</span></div>
-                        <div class="display-4 fw-bold mt-3">A junior <span class="text-danger">Full-stack</span> web
-                            developer</div>
-                        <div class="my-4 d-flex gap-3 flex-column flex-sm-row">
-                            <a href="#projects" class="btn btn-outline-danger text-white text-uppercase py-2 px-3"
-                                style="border-radius: 0px">see my projects <i class="fa-solid fa-briefcase ms-2"></i></a>
-                            <a href="#contacts" class="btn btn-outline-danger text-white text-uppercase py-2 px-3"
-                                style="border-radius: 0px">get in touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
+                    <div class="row pt-3 pt-md-5 mt-md-5 gap-3">
+                        <div class="col-12 col-md">
+                            <h1 class="border-start border-4 border-danger ps-3">Welcome!</h1>
+                            <div class="display-2 fw-bold">I'm <span class="text-danger test-shadowed">Stefano</span>
+                            </div>
+                            <div class="display-4 fw-bold mt-3">A junior <span
+                                    class="text-danger test-shadowed">Full-Stack</span> web
+                                developer</div>
                         </div>
-                        <div>
-                            <a href="https://github.com/StefanoSax93"><i class="fa-brands fa-2x fa-github brand-link"></i></a>
-                            <a href="https://www.linkedin.com/in/stefano-saccocci-a67164200/"><i class="fa-brands fa-2x fa-linkedin ms-2 brand-link"></i></a>
+                        <div class="col-12 col-md">
+                            <div class="d-flex justify-content-md-center">
+                                <img src="files/profiles.png"
+                                    class="rounded-circle border border-4 border-light profile-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section watch" id="about">
+            <div class="content">
+                <div class="row g-3 py-3">
+                    <div class="col-12 col-md">
+                        <div class="text-danger fw-bold display-4 mb-5 test-shadowed">About me</div>
+                        <p>Hi! I am Stefano and i am a full-stack web developer. Since i was a child i have always been
+                            passionate about tecnology, so after some bad choices i finally deceided to
+                            enter the world of programming, and it was the best choice of my life. I have still a lot to learn but 
+                            here you can see some of the tecnologies i studied.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="text-danger fw-bold display-4 test-shadowed mb-5 d-none d-md-block">My skills
+                            </div>
+                            <img src="files/skills.png" alt="" class="w-75 skills">
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,29 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #322a2e transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #322a2e;
+    border-radius: 10px;
+}
+
 body {
     background-color: black;
     color: white;
 }
+
 .video-bg {
     width: 100%;
     height: 100vh;
@@ -12,23 +34,25 @@ body {
     opacity: 0.5;
     z-index: 0;
 }
+
 .section {
     position: relative;
     z-index: 1;
     width: 100%;
     height: 90vh;
-    padding-top: 250px;
 }
+
 .content {
     position: fixed;
     top: 120px;
     left: -180px;
-    right: 80px;
+    right: 70px;
     opacity: 0;
     transition: all 0.8s ease-in-out;
 }
+
 .section.in-page .content {
-    left: 80px;
+    left: 90px;
     opacity: 1;
 }
 
@@ -36,10 +60,22 @@ body {
     color: white;
     transition: color 0.5s linear;
 }
+
 .brand-link:hover {
     color: red;
 }
 
 .btn {
     transition: all 0.5s linear;
+}
+
+.test-shadowed {
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-img{
+        max-width: 200px;
+    }
 }
