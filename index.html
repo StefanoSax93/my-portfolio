@@ -61,17 +61,20 @@
         <div class="section watch" id="home">
             <div class="container">
                 <div class="content">
-                    <div class="row pt-3 pt-md-5 mt-md-5 gap-3">
+                    <div class="row pt-3 pt-md-5 mt-md-5 gap-3 flex-column-reverse flex-md-row">
                         <div class="col-12 col-md">
-                            <h1 class="border-start border-4 border-danger ps-3">Welcome!</h1>
-                            <div class="display-2 fw-bold">I'm <span class="text-danger test-shadowed">Stefano</span>
+                            <div class="text-center text-md-start">
+                                <h1 class="welcome">Welcome!</h1>
+                                <div class="display-2 fw-bold">I'm <span
+                                        class="text-danger test-shadowed">Stefano</span>
+                                </div>
+                                <div class="display-4 fw-bold mt-3">A junior <span
+                                        class="text-danger test-shadowed">Full-Stack</span> web
+                                    developer</div>
                             </div>
-                            <div class="display-4 fw-bold mt-3">A junior <span
-                                    class="text-danger test-shadowed">Full-Stack</span> web
-                                developer</div>
                         </div>
                         <div class="col-12 col-md">
-                            <div class="d-flex justify-content-md-center">
+                            <div class="d-flex justify-content-center">
                                 <img src="files/profiles.png"
                                     class="rounded-circle border border-4 border-light profile-img" alt="">
                             </div>
@@ -88,7 +91,8 @@
                         <div class="text-danger fw-bold display-4 mb-5 test-shadowed">About me</div>
                         <p>Hi! I am Stefano and i am a full-stack web developer. Since i was a child i have always been
                             passionate about tecnology, so after some bad choices i finally deceided to
-                            enter the world of programming, and it was the best choice of my life. I have still a lot to learn but 
+                            enter the world of programming, and it was the best choice of my life. I have still a lot to
+                            learn but
                             here you can see some of the tecnologies i studied.
                         </p>
                     </div>
@@ -104,14 +108,97 @@
         </div>
 
         <div class="section watch" id="projects">
-            <div class="content">
-                <div>
-                    <h1>ciao sono la seconda sezione</h1>
-                    <h1>ciao sono la seconda sezione</h1>
-                    <h1>ciao sono la seconda sezione</h1>
-                    <h1>ciao sono la seconda sezione</h1>
-                    <h1>ciao sono la seconda sezione</h1>
-                    <h1>ciao sono la seconda sezione</h1>
+            <div class="content" style="height: 75vh;">
+                <div class="text-danger fw-bold display-4 mb-4 test-shadowed text-center">My Projects</div>
+                <div id="blocks">
+                    <!-- boolzapp -->
+                    <div class="carousel">
+                        <div class="d-flex flex-column flex-md-row h-100">
+                            <div class="col-12 col-md">
+                                <img src="files/boolzapp.png" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="bg-dark p-3 h-100">
+                                    <h2>Boolzapp</h2>
+                                    <p class="mt-4">This non-responsive project is inspired to whatsapp. Here you can search for your contacts and
+                                        send them messages</p>
+                                    <a href="https://stefanosax93.github.io/vue-boolzapp/"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        <i class="fa-solid fa-desktop"></i></a>
+                                    <a href="https://github.com/StefanoSax93/vue-boolzapp"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        <i class="fa-solid fa-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- boolflix -->
+                    <div class="carousel">
+                        <div class="d-flex flex-column flex-md-row h-100">
+                            <div class="col-12 col-md">
+                                <img src="files/boolflix.png" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="bg-dark p-3 h-100">
+                                    <h2>Boolflix</h2>
+                                    <p class="mt-4">In this responsive project you can search films or tv series. I got the data from
+                                        themoviedb through an API call, for which I used axios library</p>
+                                    <a href="https://stefanosax93.github.io/vue-boolflix/"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        <i class="fa-solid fa-desktop"></i></a>
+                                    <a href="https://github.com/StefanoSax93/vue-boolflix"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        <i class="fa-solid fa-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- insurance consulting -->
+                    <div class="carousel">
+                        <div class="d-flex flex-column flex-md-row h-100">
+                            <div class="col-12 col-md">
+                                <img src="files/insurance-consulting.png" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="bg-dark p-3 h-100">
+                                    <h2>Insurance Consulting</h2>
+                                    <p class="mt-4">I created this responsive project with vue.cli and i used aos library for
+                                        components animations</p>
+                                    <a href="https://stefanosax93.github.io/proj-html-vuejs/"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        <i class="fa-solid fa-desktop"></i></a>
+                                    <a href="https://github.com/StefanoSax93/proj-html-vuejs"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        <i class="fa-solid fa-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- spotify -->
+                    <div class="carousel">
+                        <div class="d-flex flex-column flex-md-row h-100">
+                            <div class="col-12 col-md">
+                                <img src="files/spotify.png" alt="" class="w-100 h-100">
+                            </div>
+                            <div class="col-12 col-md">
+                                <div class="bg-dark p-3 h-100">
+                                    <h2>Spotify</h2>
+                                    <p class="mt-4">Simple responsive project inspired to spotify.</p>
+                                    <a href="https://stefanosax93.github.io/html-css-spotifyweb/"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        <i class="fa-solid fa-desktop"></i></a>
+                                    <a href="https://github.com/StefanoSax93/html-css-spotifyweb"
+                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        <i class="fa-solid fa-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btns">
+                        <a onclick="slideshow.prev()" class="slider-btn prev"><i class="fa-solid fa-caret-left"></i></a>
+                        <a onclick="slideshow.next()" class="slider-btn next"><i
+                                class="fa-solid fa-caret-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,6 +215,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
 
     <script src="js/app.js"></script>
 </body>

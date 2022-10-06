@@ -52,7 +52,7 @@ body {
 }
 
 .section.in-page .content {
-    left: 90px;
+    left: 120px;
     opacity: 1;
 }
 
@@ -67,6 +67,7 @@ body {
 
 .btn {
     transition: all 0.5s linear;
+    border-radius: 0px;
 }
 
 .test-shadowed {
@@ -74,8 +75,43 @@ body {
         1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
+.welcome::before {
+    content: "";
+    background-color: red;
+    padding: 2px 4px;
+    margin-right: 10px;
+}
+
+.slider-btn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    transition: all 0.5s;
+}
+.slider-btn:hover {
+    transform: scale(2);
+    color: red;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.carousel {
+    height: 60vh;
+}
+.carousel img {
+    object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
     .profile-img{
         max-width: 200px;
+    }
+    .section.in-page .content {
+        left: 70px;
     }
 }
