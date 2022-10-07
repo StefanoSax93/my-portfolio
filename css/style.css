@@ -24,6 +24,14 @@ body {
     color: white;
 }
 
+.logo {
+    max-width: 27px;
+    transition: all 0.5s;
+}
+.logo:hover {
+    transform: scale(1.4) rotateY(360deg);
+}
+
 .text_primary {
     color: orange
 }
@@ -59,7 +67,7 @@ body {
     position: fixed;
     top: 120px;
     left: -180px;
-    right: 70px;
+    margin-right: 120px;
     opacity: 0;
     transition: all 0.8s ease-in-out;
 }
@@ -114,9 +122,6 @@ body {
 .next {
     right: 20px;
 }
-.carousel {
-    height: 60vh;
-}
 .carousel img {
     object-fit: cover;
 }
@@ -127,5 +132,8 @@ body {
     }
     .section.in-page .content {
         left: 70px;
+    }
+    .content {
+        margin-right: 70px;
     }
 }

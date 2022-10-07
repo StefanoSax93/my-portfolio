@@ -15,7 +15,8 @@
         integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=='
         crossorigin='anonymous' />
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 </head>
 
@@ -25,7 +26,7 @@
         <nav class="navbar navbar-expand-lg bg-black py-3 sticky-top">
             <div class="container">
                 <a class="navbar-brand text-white" href="#">
-                    <img src="files/ss-logo.png" alt="" style="max-width:27px">
+                    <img src="files/ss-logo.png" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -106,103 +107,35 @@
         </div>
 
         <div class="section watch" id="projects">
-            <div class="content" style="height: 75vh;">
+            <div class="content" style="height: 65vh;">
                 <div class="text_primary fw-bold display-4 mb-4 test-shadowed text-center">My Projects</div>
-                <div id="blocks">
-                    <!-- boolzapp -->
-                    <div class="carousel">
-                        <div class="d-flex flex-column flex-md-row h-100">
-                            <div class="col-12 col-md">
-                                <img src="files/boolzapp.png" alt="" class="w-100 h-100">
-                            </div>
-                            <div class="col-12 col-md">
-                                <div class="bg-dark p-3 h-100">
-                                    <h2>Boolzapp</h2>
-                                    <p class="mt-4">This non-responsive project is inspired to whatsapp. Here you can search for your contacts and
-                                        send them messages</p>
-                                    <a href="https://stefanosax93.github.io/vue-boolzapp/"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
-                                        <i class="fa-solid fa-desktop"></i></a>
-                                    <a href="https://github.com/StefanoSax93/vue-boolzapp"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
-                                        <i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
+                <div class="d-flex flex-column flex-md-row h-100 carousel" id="carousel" @mouseover="mouseEnter" @mouseout="mouseLeave">
+                    <div class="col-12 col-md">
+                        <img :src="slide[currentIndex].image" alt="" class="w-100 h-100">
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="bg-dark p-3 h-100">
+                            <h2>{{slide[currentIndex].title}}</h2>
+                            <p class="mt-4">{{slide[currentIndex].text}}</p>
+                            <a v-if="slide[currentIndex].demoLink" :href="slide[currentIndex].demoLink"
+                                class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase me-2">Demo
+                                <i class="fa-solid fa-desktop"></i></a>
+                            <a v-if="slide[currentIndex].codeLink" :href="slide[currentIndex].codeLink"
+                                class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                <i class="fa-solid fa-code"></i></a>
                         </div>
                     </div>
-                    <!-- boolflix -->
-                    <div class="carousel">
-                        <div class="d-flex flex-column flex-md-row h-100">
-                            <div class="col-12 col-md">
-                                <img src="files/boolflix.png" alt="" class="w-100 h-100">
-                            </div>
-                            <div class="col-12 col-md">
-                                <div class="bg-dark p-3 h-100">
-                                    <h2>Boolflix</h2>
-                                    <p class="mt-4">In this responsive project you can search films or tv series. I got the data from
-                                        themoviedb through an API call, for which I used axios library</p>
-                                    <a href="https://stefanosax93.github.io/vue-boolflix/"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
-                                        <i class="fa-solid fa-desktop"></i></a>
-                                    <a href="https://github.com/StefanoSax93/vue-boolflix"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
-                                        <i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- insurance consulting -->
-                    <div class="carousel">
-                        <div class="d-flex flex-column flex-md-row h-100">
-                            <div class="col-12 col-md">
-                                <img src="files/insurance-consulting.png" alt="" class="w-100 h-100">
-                            </div>
-                            <div class="col-12 col-md">
-                                <div class="bg-dark p-3 h-100">
-                                    <h2>Insurance Consulting</h2>
-                                    <p class="mt-4">I created this responsive project with vue.cli and i used aos library for
-                                        components animations</p>
-                                    <a href="https://stefanosax93.github.io/proj-html-vuejs/"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
-                                        <i class="fa-solid fa-desktop"></i></a>
-                                    <a href="https://github.com/StefanoSax93/proj-html-vuejs"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
-                                        <i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- spotify -->
-                    <div class="carousel">
-                        <div class="d-flex flex-column flex-md-row h-100">
-                            <div class="col-12 col-md">
-                                <img src="files/spotify.png" alt="" class="w-100 h-100">
-                            </div>
-                            <div class="col-12 col-md">
-                                <div class="bg-dark p-3 h-100">
-                                    <h2>Spotify</h2>
-                                    <p class="mt-4">Simple responsive project inspired to spotify.</p>
-                                    <a href="https://stefanosax93.github.io/html-css-spotifyweb/"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
-                                        <i class="fa-solid fa-desktop"></i></a>
-                                    <a href="https://github.com/StefanoSax93/html-css-spotifyweb"
-                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
-                                        <i class="fa-solid fa-code"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="btns">
-                        <a onclick="slideshow.prev()" class="slider-btn prev"><i class="fa-solid fa-2x fa-caret-left"></i></a>
-                        <a onclick="slideshow.next()" class="slider-btn next"><i class="fa-solid fa-2x fa-caret-right"></i></a>
-                    </div>
+                    <div>
+                        <a @click="upClick" class="slider-btn prev"><i class="fa-solid fa-2x fa-caret-left"></i></a>
+                        <a @click="downClick" class="slider-btn next"><i class="fa-solid fa-2x fa-caret-right"></i></a>
+                    </div> 
                 </div>
             </div>
         </div>
 
         <div class="section watch" id="contacts">
-            <div class="content">
-                <h1>ciao sono la terza sezione</h1>
+            <div class="content" style="height: 75vh;">
+                
             </div>
         </div>
     </div>
@@ -215,6 +148,7 @@
 
 
     <script src="js/app.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
