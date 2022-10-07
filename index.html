@@ -22,10 +22,10 @@
 <body>
 
     <div>
-        <nav class="navbar navbar-expand-lg bg-black py-3 sticky-top" style="opacity: 0.9;">
+        <nav class="navbar navbar-expand-lg bg-black py-3 sticky-top">
             <div class="container">
                 <a class="navbar-brand text-white" href="#">
-                    <img src="files/ss-logo.png" alt="" style="max-width:30px">
+                    <img src="files/ss-logo.png" alt="" style="max-width:27px">
                 </a>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -35,13 +35,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto fw-bold d-flex gap-3">
                         <li class="nav-item">
-                            <a href="#projects" class="btn btn-outline-danger text-white text-uppercase py-2 px-3"
-                                style="border-radius: 0px">see my projects <i
+                            <a href="#projects" class="btn my-btn text-white text-uppercase py-2 px-3">see my projects <i
                                     class="fa-solid fa-briefcase ms-2"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contacts" class="btn btn-outline-danger text-white text-uppercase py-2 px-3"
-                                style="border-radius: 0px">get in touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
+                            <a href="#contacts" class="btn my-btn text-white text-uppercase py-2 px-3">get in touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
                         </li>
                         <div class="d-flex align-items-center gap-2">
                             <li class="nav-item">
@@ -57,7 +55,7 @@
                 </div>
             </div>
         </nav>
-        <video src="files/video.mp4" autoplay muted loop class="video-bg"></video>
+        <video src="files/retro.mp4" autoplay muted loop class="video-bg"></video>
         <div class="section watch" id="home">
             <div class="container">
                 <div class="content">
@@ -66,17 +64,17 @@
                             <div class="text-center text-md-start">
                                 <h1 class="welcome">Welcome!</h1>
                                 <div class="display-2 fw-bold">I'm <span
-                                        class="text-danger test-shadowed">Stefano</span>
+                                        class="text_primary test-shadowed">Stefano</span>
                                 </div>
                                 <div class="display-4 fw-bold mt-3">A junior <span
-                                        class="text-danger test-shadowed">Full-Stack</span> web
+                                        class="text_primary test-shadowed">Full-Stack</span> web
                                     developer</div>
                             </div>
                         </div>
                         <div class="col-12 col-md">
                             <div class="d-flex justify-content-center">
                                 <img src="files/profiles.png"
-                                    class="rounded-circle border border-4 border-light profile-img" alt="">
+                                    class="rounded-circle profile-img" alt="" style="border: 5px solid purple">
                             </div>
                         </div>
                     </div>
@@ -88,7 +86,7 @@
             <div class="content">
                 <div class="row g-3 py-3">
                     <div class="col-12 col-md">
-                        <div class="text-danger fw-bold display-4 mb-5 test-shadowed">About me</div>
+                        <div class="text_primary fw-bold display-4 mb-5 test-shadowed">About me</div>
                         <p>Hi! I am Stefano and i am a full-stack web developer. Since i was a child i have always been
                             passionate about tecnology, so after some bad choices i finally deceided to
                             enter the world of programming, and it was the best choice of my life. I have still a lot to
@@ -98,7 +96,7 @@
                     </div>
                     <div class="col-12 col-md">
                         <div class="d-flex flex-column align-items-center">
-                            <div class="text-danger fw-bold display-4 test-shadowed mb-5 d-none d-md-block">My skills
+                            <div class="text_primary fw-bold display-4 test-shadowed mb-5 d-none d-md-block">My skills
                             </div>
                             <img src="files/skills.png" alt="" class="w-75 skills">
                         </div>
@@ -109,7 +107,7 @@
 
         <div class="section watch" id="projects">
             <div class="content" style="height: 75vh;">
-                <div class="text-danger fw-bold display-4 mb-4 test-shadowed text-center">My Projects</div>
+                <div class="text_primary fw-bold display-4 mb-4 test-shadowed text-center">My Projects</div>
                 <div id="blocks">
                     <!-- boolzapp -->
                     <div class="carousel">
@@ -123,10 +121,10 @@
                                     <p class="mt-4">This non-responsive project is inspired to whatsapp. Here you can search for your contacts and
                                         send them messages</p>
                                     <a href="https://stefanosax93.github.io/vue-boolzapp/"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
                                         <i class="fa-solid fa-desktop"></i></a>
                                     <a href="https://github.com/StefanoSax93/vue-boolzapp"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
                                         <i class="fa-solid fa-code"></i></a>
                                 </div>
                             </div>
@@ -144,10 +142,10 @@
                                     <p class="mt-4">In this responsive project you can search films or tv series. I got the data from
                                         themoviedb through an API call, for which I used axios library</p>
                                     <a href="https://stefanosax93.github.io/vue-boolflix/"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
                                         <i class="fa-solid fa-desktop"></i></a>
                                     <a href="https://github.com/StefanoSax93/vue-boolflix"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
                                         <i class="fa-solid fa-code"></i></a>
                                 </div>
                             </div>
@@ -165,10 +163,10 @@
                                     <p class="mt-4">I created this responsive project with vue.cli and i used aos library for
                                         components animations</p>
                                     <a href="https://stefanosax93.github.io/proj-html-vuejs/"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
                                         <i class="fa-solid fa-desktop"></i></a>
                                     <a href="https://github.com/StefanoSax93/proj-html-vuejs"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
                                         <i class="fa-solid fa-code"></i></a>
                                 </div>
                             </div>
@@ -185,19 +183,18 @@
                                     <h2>Spotify</h2>
                                     <p class="mt-4">Simple responsive project inspired to spotify.</p>
                                     <a href="https://stefanosax93.github.io/html-css-spotifyweb/"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase">Demo
                                         <i class="fa-solid fa-desktop"></i></a>
                                     <a href="https://github.com/StefanoSax93/html-css-spotifyweb"
-                                        class="btn btn-outline-danger text-white mt-4 fw-bold px-5 py-2 text-uppercase">Code
+                                        class="btn my-btn text-white mt-4 fw-bold px-5 py-2 text-uppercase ms-2">Code
                                         <i class="fa-solid fa-code"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="btns">
-                        <a onclick="slideshow.prev()" class="slider-btn prev"><i class="fa-solid fa-caret-left"></i></a>
-                        <a onclick="slideshow.next()" class="slider-btn next"><i
-                                class="fa-solid fa-caret-right"></i></a>
+                        <a onclick="slideshow.prev()" class="slider-btn prev"><i class="fa-solid fa-2x fa-caret-left"></i></a>
+                        <a onclick="slideshow.next()" class="slider-btn next"><i class="fa-solid fa-2x fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>

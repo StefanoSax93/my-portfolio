@@ -24,6 +24,19 @@ body {
     color: white;
 }
 
+.text_primary {
+    color: orange
+}
+
+.my-btn {
+    border: 2px solid orange;
+}
+
+.my-btn:hover {
+    background-color: orange;
+    transform: scale(1.05);
+}
+
 .video-bg {
     width: 100%;
     height: 100vh;
@@ -58,11 +71,12 @@ body {
 
 .brand-link {
     color: white;
-    transition: color 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .brand-link:hover {
-    color: red;
+    color: orange;
+    transform: scale(1.05);
 }
 
 .btn {
@@ -71,13 +85,13 @@ body {
 }
 
 .test-shadowed {
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+        1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .welcome::before {
     content: "";
-    background-color: red;
+    background-color: orange;
     padding: 2px 4px;
     margin-right: 10px;
 }
@@ -92,13 +106,13 @@ body {
 }
 .slider-btn:hover {
     transform: scale(2);
-    color: red;
+    color: orange;
 }
 .prev {
-    left: 10px;
+    left: 20px;
 }
 .next {
-    right: 10px;
+    right: 20px;
 }
 .carousel {
     height: 60vh;
