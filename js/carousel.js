@@ -25,10 +25,24 @@ const slides = [
     {
         title: 'Spotify',
         image: 'files/spotify.png',
-        text: 'Simple responsive project inspired to spotify.',
+        text: 'Static responsive project inspired to spotify.',
         demoLink:'https://stefanosax93.github.io/html-css-spotifyweb/',
         codeLink:'https://github.com/StefanoSax93/html-css-spotifyweb'
     },
+    {
+        title: 'Playstation',
+        image: 'files/playstation.png',
+        text: 'Static responsive project inspired to playstation website.',
+        demoLink:'https://stefanosax93.github.io/htmlcss-playstation/',
+        codeLink:'https://github.com/StefanoSax93/htmlcss-playstation'
+    },
+    {
+        title: 'Deliveboo',
+        image: 'files/deliveboo.png',
+        text: 'Team project inspired by deliveroo website, where there is a back-end section developed with php and laravel, and a front-end section developed with vue.js.',
+        codeLink:'https://github.com/StefanoSax93/Deliveboo'
+    },
+    
 ];
 
 //inserisco vue

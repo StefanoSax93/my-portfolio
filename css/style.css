@@ -65,7 +65,7 @@ body {
 
 .content {
     position: fixed;
-    top: 120px;
+    top: 100px;
     left: -180px;
     margin-right: 120px;
     opacity: 0;
@@ -93,15 +93,20 @@ body {
 }
 
 .test-shadowed {
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-        1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    text-shadow: 2px 5px purple, -2px 0 purple, 0 2px purple, 0 -2px purple,
+        1px 1px purple, -1px -1px purple, 1px -1px purple, -1px 1px purple;
+}
+
+.profile-img{
+    max-width: 300px;
 }
 
 .welcome::before {
     content: "";
     background-color: orange;
-    padding: 2px 4px;
+    padding: 0 4px;
     margin-right: 10px;
+    border: 4px solid purple;
 }
 
 .slider-btn {
