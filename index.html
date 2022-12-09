@@ -30,7 +30,7 @@
                 <a class="navbar-brand text-white" href="#">
                     <img src="files/ss-logo.png" alt="" class="logo">
                 </a>
-                
+
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -38,12 +38,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto fw-bold d-flex gap-3 align-items-lg-center">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <div class="my-container">
 
                                 <div class="circle"></div>
                                 <div class="circle"></div>
-                        
+
                                 <div class="clock">
                                     <div class="clock-bg">
                                         <img src="files/clock.png" alt="...">
@@ -58,15 +58,17 @@
                                         <span class="sec" id="sec"></span>
                                     </div>
                                 </div>
-                        
+
                             </div>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#projects" class="btn my-btn text-white text-uppercase py-2 px-3">see my projects
+                                <i class="fa-solid fa-briefcase ms-2"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#projects" class="btn my-btn text-white text-uppercase py-2 px-3">see my projects <i
-                                    class="fa-solid fa-briefcase ms-2"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="mailto:stefano.saccocci.93@gmail.com" class="btn my-btn text-white text-uppercase py-2 px-3">get in touch <i class="fa-solid fa-paper-plane ms-2"></i></a>
+                            <a href="mailto:stefano.saccocci.93@gmail.com"
+                                class="btn my-btn text-white text-uppercase py-2 px-3">get in touch <i
+                                    class="fa-solid fa-paper-plane ms-2"></i></a>
                         </li>
                         <div class="d-flex align-items-center gap-2">
                             <li class="nav-item">
@@ -83,6 +85,38 @@
             </div>
         </nav>
         <video src="files/retro.mp4" autoplay muted loop class="video-bg"></video>
+        <button class="btn text-light clock-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><i class="fa-regular fa-clock"></i></button>
+
+        <div class="offcanvas offcanvas-end" style="width: 600px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header bg-dark">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-dark d-flex justify-content-center">
+                <div class="my-container">
+
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+
+                    <div class="clock">
+                        <div class="clock-bg">
+                            <img src="files/clock.png" alt="...">
+                        </div>
+                        <div class="hour">
+                            <span class="hr" id="hr"></span>
+                        </div>
+                        <div class="minute">
+                            <span class="min" id="min"></span>
+                        </div>
+                        <div class="second">
+                            <span class="sec" id="sec"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <div class="section watch" id="home">
             <div class="container">
                 <div class="content">
@@ -100,8 +134,7 @@
                         </div>
                         <div class="col-12 col-md">
                             <div class="d-flex justify-content-center">
-                                <img src="files/img-profile.png"
-                                    class="profile-img" alt="">
+                                <img src="files/img-profile.png" class="profile-img" alt="">
                             </div>
                         </div>
                     </div>
@@ -135,7 +168,8 @@
         <div class="section watch" id="projects">
             <div class="content" style="height: 65vh;">
                 <div class="text_primary fw-bold display-4 mb-4 test-shadowed text-center">My Projects</div>
-                <div class="d-flex flex-column flex-md-row h-100 carousel" id="carousel" @mouseover="mouseEnter" @mouseout="mouseLeave">
+                <div class="d-flex flex-column flex-md-row h-100 carousel" id="carousel" @mouseover="mouseEnter"
+                    @mouseout="mouseLeave">
                     <div class="col-12 col-md">
                         <img :src="slide[currentIndex].image" alt="" class="w-100 h-100">
                     </div>
@@ -154,7 +188,7 @@
                     <div>
                         <a @click="upClick" class="slider-btn prev"><i class="fa-solid fa-2x fa-caret-left"></i></a>
                         <a @click="downClick" class="slider-btn next"><i class="fa-solid fa-2x fa-caret-right"></i></a>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>

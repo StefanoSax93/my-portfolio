@@ -9,12 +9,6 @@ let callback = function (items) {
         }
     });
 }
-// observer
-let observer = new IntersectionObserver(callback, { threshold: 0.55 });
-// apply
-elements_to_watch.forEach((element) => {
-    observer.observe(element);
-});
 
 //clock
 const degree = 6;
@@ -33,4 +27,10 @@ setInterval(() => {
     min.style.transform = `rotateZ(${mm}deg)`;
     sec.style.transform = `rotateZ(${ss}deg)`;
 
+});
+// observer
+let observer = new IntersectionObserver(callback, { threshold: 0.55 });
+// apply
+elements_to_watch.forEach((element) => {
+    observer.observe(element);
 });
